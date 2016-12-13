@@ -1,3 +1,5 @@
+// To compile I used this command:
+// gcc densityofstates.c -o densityofstates -lm -I/usr/include -ggdb
 #include <stdio.h>
 #include <math.h>
 #include <malloc.h>
@@ -111,7 +113,6 @@ void density(){
 	fclose(fp2);
 
 	printf("\n");
-	main();
 }
 
 int gcdn(int n, int m){
