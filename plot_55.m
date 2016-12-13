@@ -1,0 +1,10 @@
+image55=imread('nanotube55.png');
+image55=flipud(image55);
+image ([-10,10],[0,0.0020],image55);
+hold on;
+set(gca,'YDir','normal');
+plot(Energy55,DOS55);
+ylabel('DOS (a.u.)');
+xlabel('Energy (eV)');
+title('DOS of (5,5) nanotube');
+saveas(gcf,'nanotube55plot.png');
