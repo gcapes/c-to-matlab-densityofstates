@@ -1,4 +1,5 @@
-% Porting of C code into MATLAB
+% Porting of the original C code into MATLAB
+% Gerard Capes <gerard.capes@manchester.ac.uk> 14 December 2017
 % Run the main function like this:
     % DOS(5,5,0,0,1000,1000);
 
@@ -10,14 +11,14 @@ function DOS(n,m,straint,strainc,iter,p)
     % p is number of points analyzed
 
     % Declaration of variables
-    % Nhex; % Number of hexagons in the 1D unit cell
-    % circum; % Circumference of the nanotube in unit of a0
-    % period; % Period of the nanotube along its axis
+    % Nhex = Number of hexagons in the 1D unit cell
+    % circum = Circumference of the nanotube in unit of a0
+    % period = Period of the nanotube along its axis
 
     E0=2.9; % Hopping parameter without strain
     a0=2.49; % Length of the lattice vector without strain
-    % E1, E2, E3; % New hopping parameters with strain
-    % r1, r2, r3; % Strained bond lengths
+    % E1, E2, E3 = New hopping parameters with strain
+    % r1, r2, r3 = Strained bond lengths
     
 
     circum=sqrt(n*n+m*m+n*m);
